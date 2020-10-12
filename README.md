@@ -64,19 +64,19 @@ Clone the https://gitlab.com/comp3006l/2020/wolfpack/dc-model.git into your loca
 <h3>2.1 Execute the following commands in the command prompt or power shell opened in the service folder</h3>
 
 <h4>Example from clock service </h4> 
- E:\Final Year Project - DC Model all fils\Project\dc-model\Clock-Service> mvn package <br>
+ \Clock-Service> mvn package <br>
 
- E:\Final Year Project - DC Model all fils\Project\dc-model\Clock-Service> mvn clean compile spring-boot:run<br>
+ \Clock-Service> mvn clean compile spring-boot:run<br>
 
  
  
  <h4>For Worker Service which is built in AKKA you may execute the above OR  </h4> 
 
-  E:\Final Year Project - DC Model all fils\Project\dc-model\Worker-Service> mvn clean compile exec:java<br>
+  \Worker-Service> mvn clean compile exec:java<br>
 
   <h4> For WEB GUI Service which is built in Angular CLI use the following </h4> 
 
-  E:\Final Year Project - DC Model all fils\Project\dc-model\Web-GUI-Service> ng serve -o <br>
+  \Web-GUI-Service> ng serve -o <br>
 
   <h4>Configuring the system</h4> 
 

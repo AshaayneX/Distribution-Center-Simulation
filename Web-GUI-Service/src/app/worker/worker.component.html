@@ -1,0 +1,52 @@
+<div>
+  <div class="card-body">
+    <h1>Workers</h1>
+    <div class="table-responsive">
+      <div style="overflow:auto; height: 90vh;">
+        <table class="table" id="orders">
+          <thead>
+            <tr>
+              <th>
+                Name
+              </th>
+              <th>
+                Location
+              </th>
+              <th>
+                Capacity
+              </th>
+              <th>
+                Actions
+              </th>
+              <th style="width: 300px;">
+                Next Action
+              </th>
+              <th>
+                Notification Uri
+              </th>
+              <th>
+                Holding Items
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let worker of workers">
+              <td>{{worker.name}}</td>
+              <td>{{worker.location}}</td>
+              <td>{{worker.capacity}}</td>
+              <td style="width: 300px;">
+                <div style="overflow: scroll;height: 20vh;" [innerHTML]="displayAction(worker.actions)"></div>
+              </td>
+              <td>
+                <div [innerHTML]="displayNextAction(worker.nextAction)"></div>
+              </td>
+              <td>{{worker.notificationUri}}</td>
+              <td>{{displayHoldingItemsInWorker(worker.holdingItems)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

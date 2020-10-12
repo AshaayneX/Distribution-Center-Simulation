@@ -1,0 +1,28 @@
+<div class=" card-body">
+  <h1>Orders</h1>
+  <button stype="button" class="btn btn-secondary" (click)="refresh()">Refresh</button>
+  <div class=" table-responsive">
+    <table class=" table tablesorter" id="orders">
+      <thead class=" text-primary">
+        <tr>
+          <th>
+            OrderID
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+            Items in Order
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{order.orderId}}</td>
+          <td>{{order.status}}</td>
+          <td>{{displayItemsInOrder(order.itemsInOrder)}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
